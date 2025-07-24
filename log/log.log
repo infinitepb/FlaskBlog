@@ -288,3 +288,148 @@
 [24.07.25 | 11:11:26 | India Standard Time] INFO: Run time: 0:02:14 
 [24.07.25 | 11:11:26 | India Standard Time] INFO: Shut down
 [24.07.25 | 11:11:26 | India Standard Time] WARNING: App shut down
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Starting...
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Werkzeug default logger is disabled
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Custom logger is enabled
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Debug mode: True
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Name: flaskBlog
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Version: 3.0.0dev
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Host: 0.0.0.0
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Port: 1283
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Session permanent: True
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Root path: .
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Log folder root: log/
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Log file root: log/log.log
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Log in: True
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Registration: True
+[24.07.25 | 13:31:24 | India Standard Time] INFO: SMTP server: smtp.gmail.com
+[24.07.25 | 13:31:24 | India Standard Time] INFO: SMTP port: 587
+[24.07.25 | 13:31:24 | India Standard Time] INFO: SMTP mail: flaskblogdogukanurker@gmail.com
+[24.07.25 | 13:31:24 | India Standard Time] INFO: reCAPTCHA is off
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Default admin is on
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Default admin username: admin
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Default admin email: admin@flaskblog.com
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Default admin point: 0
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Default admin profile picture: https://api.dicebear.com/7.x/identicon/svg?seed=admin&radius=10
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Database folder: "/db/" found
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Users database: "db/users.db" found
+[24.07.25 | 13:31:24 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:24 | India Standard Time] DATABASE: select userID from users;
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Table: "users" found in "db/users.db"
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Posts database: "db/posts.db" found
+[24.07.25 | 13:31:24 | India Standard Time] DATABASE: Connecting to 'db/posts.db' database
+[24.07.25 | 13:31:24 | India Standard Time] DATABASE: select id from posts;
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Table: "posts" found in "db/posts.db"
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Comments database: "db/comments.db" found
+[24.07.25 | 13:31:24 | India Standard Time] DATABASE: Connecting to 'db/comments.db' database
+[24.07.25 | 13:31:24 | India Standard Time] DATABASE: select id from comments;
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Table: "comments" found in "db/comments.db"
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Analytics database: "db/analytics.db" found
+[24.07.25 | 13:31:24 | India Standard Time] DATABASE: Connecting to 'db/analytics.db' database
+[24.07.25 | 13:31:24 | India Standard Time] DATABASE: select id from postsAnalytics;
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Table: "postsAnalytics" found in "db/analytics.db"
+[24.07.25 | 13:31:24 | India Standard Time] INFO: Running on http://0.0.0.0:1283
+[24.07.25 | 13:31:24 | India Standard Time] SUCCESS: App started
+[24.07.25 | 13:31:31 | India Standard Time] INFO: Browser language detected and set to: en
+[24.07.25 | 13:31:31 | India Standard Time] DATABASE: Connecting to 'db/posts.db' database
+[24.07.25 | 13:31:31 | India Standard Time] DATABASE: select count(*) from posts
+[24.07.25 | 13:31:31 | India Standard Time] DATABASE: SELECT *, (views * 1 / log(1 + (strftime('%s', 'now') - timeStamp) / 3600 + 2)) AS hotScore FROM posts ORDER BY hotScore desc limit 9 offset 0
+[24.07.25 | 13:31:32 | India Standard Time] INFO: Sorting posts on index page by: Hot - Descending
+[24.07.25 | 13:31:32 | India Standard Time] INFO: Loaded translations for language: en
+[24.07.25 | 13:31:32 | India Standard Time] INFO: Injecting translations for language: en
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'dogukanurker' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning DogukanUrker's profile picture: https://api.dicebear.com/5.x/identicon/svg?seed=Bear&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'jacksonscott' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning JacksonScott's profile picture: https://api.dicebear.com/7.x/identicon/svg?seed=JacksonScott&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'efecakir' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning EfeCakir's profile picture: https://api.dicebear.com/7.x/identicon/svg?seed=EfeCakir&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'admin' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning admin's profile picture: https://api.dicebear.com/5.x/identicon/svg?seed=admin&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'pinarezer' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning PinarEzer's profile picture: https://api.dicebear.com/7.x/identicon/svg?seed=pin&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'dorukp' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning DorukP's profile picture: https://api.dicebear.com/5.x/identicon/svg?seed=DorukP&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'dogukanurker' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning DogukanUrker's profile picture: https://api.dicebear.com/5.x/identicon/svg?seed=Bear&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'asyaurker' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning AsyaUrker's profile picture: https://api.dicebear.com/5.x/identicon/svg?seed=AsyaUrker&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:33 | India Standard Time] DATABASE: select profilePicture from users where lower(userName) = 'sudetekin' 
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Returning SudeTekin's profile picture: https://api.dicebear.com/7.x/identicon/svg?seed=SudeTekin&radius=10
+[24.07.25 | 13:31:33 | India Standard Time] SUCCESS: Adress: 127.0.0.1 | Method: GET | Path: / | Scheme: http | Status: 200 OK | Content Length: 34219 | Referrer: None | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:33 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:34 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:34 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:35 | India Standard Time] INFO: Adress: 127.0.0.1 | Method: GET | Path: /static/css/general.css | Scheme: http | Status: 304 NOT MODIFIED | Content Length: 33 | Referrer: http://localhost:1283/ | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:35 | India Standard Time] INFO: Adress: 127.0.0.1 | Method: GET | Path: /static/js/navbar.js | Scheme: http | Status: 304 NOT MODIFIED | Content Length: 248 | Referrer: http://localhost:1283/ | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:36 | India Standard Time] INFO: Adress: 127.0.0.1 | Method: GET | Path: /static/css/markdown.css | Scheme: http | Status: 304 NOT MODIFIED | Content Length: 5597 | Referrer: http://localhost:1283/ | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:36 | India Standard Time] INFO: Adress: 127.0.0.1 | Method: GET | Path: /static/css/flash.css | Scheme: http | Status: 304 NOT MODIFIED | Content Length: 853 | Referrer: http://localhost:1283/ | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:36 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:36 | India Standard Time] DATABASE: Connecting to 'db/posts.db' database
+[24.07.25 | 13:31:36 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:36 | India Standard Time] DATABASE: Connecting to 'db/posts.db' database
+[24.07.25 | 13:31:36 | India Standard Time] DATABASE: select banner from posts where id = 6 
+[24.07.25 | 13:31:36 | India Standard Time] DATABASE: select banner from posts where id = 7 
+[24.07.25 | 13:31:36 | India Standard Time] INFO: Post: 6 | Image: http://localhost:1283/postImage/6 loaded
+[24.07.25 | 13:31:36 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:36 | India Standard Time] INFO: Post: 7 | Image: http://localhost:1283/postImage/7 loaded
+[24.07.25 | 13:31:36 | India Standard Time] SUCCESS: Adress: 127.0.0.1 | Method: GET | Path: /postImage/6 | Scheme: http | Status: 200 OK | Content Length: 829061 | Referrer: http://localhost:1283/ | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:36 | India Standard Time] SUCCESS: Adress: 127.0.0.1 | Method: GET | Path: /postImage/7 | Scheme: http | Status: 200 OK | Content Length: 1060052 | Referrer: http://localhost:1283/ | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:36 | India Standard Time] INFO: Adress: 127.0.0.1 | Method: GET | Path: /static/js/timeStamp.js | Scheme: http | Status: 304 NOT MODIFIED | Content Length: 1018 | Referrer: http://localhost:1283/ | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:37 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:37 | India Standard Time] INFO: Adress: 127.0.0.1 | Method: GET | Path: /static/css/recaptcha.css | Scheme: http | Status: 304 NOT MODIFIED | Content Length: 60 | Referrer: http://localhost:1283/ | User Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36
+[24.07.25 | 13:31:37 | India Standard Time] INFO: Language already set in session: en
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Starting...
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Werkzeug default logger is disabled
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Custom logger is enabled
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Debug mode: True
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Name: flaskBlog
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Version: 3.0.0dev
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Host: 0.0.0.0
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Port: 1283
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Session permanent: True
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Root path: .
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Log folder root: log/
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Log file root: log/log.log
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Log in: True
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Registration: True
+[24.07.25 | 13:31:22 | India Standard Time] INFO: SMTP server: smtp.gmail.com
+[24.07.25 | 13:31:22 | India Standard Time] INFO: SMTP port: 587
+[24.07.25 | 13:31:22 | India Standard Time] INFO: SMTP mail: flaskblogdogukanurker@gmail.com
+[24.07.25 | 13:31:22 | India Standard Time] INFO: reCAPTCHA is off
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Default admin is on
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Default admin username: admin
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Default admin email: admin@flaskblog.com
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Default admin point: 0
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Default admin profile picture: https://api.dicebear.com/7.x/identicon/svg?seed=admin&radius=10
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Database folder: "/db/" found
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Users database: "db/users.db" found
+[24.07.25 | 13:31:22 | India Standard Time] DATABASE: Connecting to 'db/users.db' database
+[24.07.25 | 13:31:22 | India Standard Time] DATABASE: select userID from users;
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Table: "users" found in "db/users.db"
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Posts database: "db/posts.db" found
+[24.07.25 | 13:31:22 | India Standard Time] DATABASE: Connecting to 'db/posts.db' database
+[24.07.25 | 13:31:22 | India Standard Time] DATABASE: select id from posts;
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Table: "posts" found in "db/posts.db"
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Comments database: "db/comments.db" found
+[24.07.25 | 13:31:22 | India Standard Time] DATABASE: Connecting to 'db/comments.db' database
+[24.07.25 | 13:31:22 | India Standard Time] DATABASE: select id from comments;
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Table: "comments" found in "db/comments.db"
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Analytics database: "db/analytics.db" found
+[24.07.25 | 13:31:22 | India Standard Time] DATABASE: Connecting to 'db/analytics.db' database
+[24.07.25 | 13:31:22 | India Standard Time] DATABASE: select id from postsAnalytics;
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Table: "postsAnalytics" found in "db/analytics.db"
+[24.07.25 | 13:31:22 | India Standard Time] INFO: Running on http://0.0.0.0:1283
+[24.07.25 | 13:31:22 | India Standard Time] SUCCESS: App started
+[24.07.25 | 13:34:15 | India Standard Time] INFO: Run time: 0:02:53 
+[24.07.25 | 13:34:15 | India Standard Time] INFO: Shut down
+[24.07.25 | 13:34:15 | India Standard Time] WARNING: App shut down
