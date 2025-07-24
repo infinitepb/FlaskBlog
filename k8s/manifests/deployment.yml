@@ -17,7 +17,6 @@ spec:
     spec:
       containers:
       - name: flaskblog-container
-        Dockerfile: Dockerfile
         image: flaskblog:latest
         imagePullPolicy: IfNotPresent
         ports:
