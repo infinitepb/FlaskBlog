@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flaskblog-deployment
+  namespace: flaskblog
+  labels:
+    app: flaskblog
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: flaskblog
+  template:
+    metadata:
+      labels:
+        app: flaskblog
+    spec:
+      containers:
+      - name: flaskblog-container
+        Dockerfile: Dockerfile
+        image: flaskblog:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 1283
